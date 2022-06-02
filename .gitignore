@@ -1,3 +1,4 @@
 .history/
 .gitignore
 node_modules
+redis_data/
