@@ -48,7 +48,7 @@ singleRouter.get('/', async (req, res) => {
 
 /* PUT todo. */
 singleRouter.put('/', async (req, res) => {
-  req.todo.save = !req.todo.save
+  req.todo.done = !req.todo.done
   await req.todo.save()
   res.sendStatus(200) // Implement this
 })
